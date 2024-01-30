@@ -13,11 +13,11 @@ def calcular_tp(tempo_protrombina, saida='advanced'):
     """
 
     # Definir faixas de referência
-    referencia_normal = (11.0, 13.0)  # Normal em segundos
+    referencia_normal = (11.0, 13.0)
     referencia_baixa = 10.0
     referencia_alta = 14.0
 
-    # Classificação do TP
+
     classificacao = None
     if tempo_protrombina < referencia_baixa:
         classificacao = "Muito baixo"

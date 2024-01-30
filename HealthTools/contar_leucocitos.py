@@ -23,7 +23,7 @@ def contar_leucocitos(numero_leucocitos,saida):
     referencia_alta = 11.0
     referencia_muito_alta = 15.0
     referencia_extremamente_alta = 20.0
-    referencia_super_alta = 25.0
+
 
     if numero_leucocitos < referencia_baixa:
         if saida == "simple":

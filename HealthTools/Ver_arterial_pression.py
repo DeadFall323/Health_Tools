@@ -9,8 +9,9 @@ def medir_pressão_arterial(sistólica, diastólica):
     Returns:
         str: Classificação da pressão arterial, que pode ser 'Pressão arterial normal', 'Pressão arterial elevada', 'Pressão arterial de estágio 1' ou 'Pressão arterial de estágio 2'.
     """
-
-    if sistólica < 120 and diastólica < 80:
+    if sistólica < 90 and diastólica < 60:
+        return "Pressão arterial baixa"
+    elif sistólica < 120 and diastólica < 80:
         return "Pressão arterial normal"
     elif 120 <= sistólica < 130 and diastólica < 80:
         return "Pressão arterial elevada"
@@ -18,6 +19,8 @@ def medir_pressão_arterial(sistólica, diastólica):
         return "Pressão arterial de estágio 1"
     elif sistólica >= 140 or diastólica >= 90:
         return "Pressão arterial de estágio 2"
+    else:
+        return "Pressão Anormal"
 
 def verifica_pressão_arterial(sistólica, diastólica, sexo, idade, saida='simple'):
     """
