@@ -1,4 +1,4 @@
-from HealthTools.__init__ import verifica_pressão_arterial
+from HealthTools.__init__ import Ver_arterial_pression
 from HealthTools.__init__ import verifica_imc
 from HealthTools.__init__ import calcular_tfg
 from HealthTools.__init__ import contar_hemacias
@@ -19,12 +19,14 @@ from HealthTools.__init__ import teste_capacidade_anaerobica
 from HealthTools.__init__ import teste_funcao_renal
 from HealthTools.__init__ import teste_funcao_hepatica
 from HealthTools.__init__ import teste_funcao_tireoidiana
+from HealthTools.__init__ import help
 
 #Função0 - Pressão Venosa Central (PVC)
 #pvc = 2.0  # Exemplo de PVC (mmHg)
 #categoria_pvc = classificar_pvc(pvc)
 #print("Categoria da Pressão Venosa Central:", categoria_pvc)
 
+#help()
 
 # Função 1 - Pressão arterial
 #resultado_simple = verifica_pressão_arterial(130, 60, 'masculino', 40, 'simple')
@@ -38,8 +40,8 @@ from HealthTools.__init__ import teste_funcao_tireoidiana
 
 
 #Função 2 - Verifica Indice de massa corporal
-resultado = verifica_imc(90, 1.50, "masculino", "simple")
-print(resultado)
+#resultado = verifica_imc(90, 1.50, "masculino", "simple")
+#print(resultado)
 
 
 #Função 3- Calcula
@@ -58,7 +60,7 @@ print(resultado)
 
 
 #Função6- contar_plaquetas
-#resltado = contar_plaquetas(450000,"advanced")
+#resltado = contar_plaquetas(10000,"simple")
 #print(resltado)
 
 #Função7- Calcular frequencia cardiaca maxima
@@ -116,7 +118,7 @@ print(resultado)"""
 
 
 #Função15 - Calcula debito urinario
-#resultado = calcular_debito_urinario(2,2,"simple")
+#resultado = calcular_debito_urinario(5,2,'advanced')
 #print(resultado)
 
 

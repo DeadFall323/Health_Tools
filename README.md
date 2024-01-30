@@ -65,14 +65,24 @@ saida:  Pressão arterial de estágio 1
     """
 
 ```python
-entrada: resultado_simple = calcular_debito_urinario(100, 60, 'simple')
+entrada: resultado = calcular_debito_urinario(5,2,"simple")
          print(resultado_simple)
 
-saida: 1.6666666666666667
+saida: (2.5, 'Produção de urina muito alta')
 ```
 
 ```python
+entrada: resultado_simple = calcular_debito_urinario(100, 60, 'advanced')
+         print(resultado_simple)
 
+saida: 1.0
+```
+
+```python
+entrada: resultado_simple = calcular_debito_urinario(100, 60, 'simple')
+         print(resultado_simple)
+
+saida: (1.0, 'Produção de urina baixa')
 ```
 
 ### <font color="orange">def calcular_fcm(<font color="green">idade, sexo</font>):</font>
@@ -99,15 +109,20 @@ saida: 1.6666666666666667
 entrada: resultado = calcular_fcm(22,"feminino")
          print(resultado)
          
-saida: saida: 198
+saida: Alta
 ```
 ```python
 entrada: resultado = calcular_fcm(16,"masculino")
          print(resultado)
          
-saida: saida: 204
+saida: Muito alta
 ```
-
+```python
+entrada: resultado = calcular_fcm(22,"feminino",'advanced')
+         print(resultado)
+         
+saida: 198
+```
 
 ### <font color="orange">def calcular_frequencia_respiratoria(<font color="green">fr, idade</font>):</font>
     """
@@ -713,6 +728,8 @@ saida:obesidade morbida
 ```
 
 ## Referências
+[Calculo MDRD](https://www.revportcardiol.org/pt-taxa-filtracao-glomerular-que-formula-articulo-S0870255112001096#:~:text=Para%20cada%20doente%2C%20foi%20calculado,valores%20do%20score%20de%20GRACE.)
+
 [Calculadora IMC](https://www.nutryun.com.br/tabela-imc)
 
 [Taxa de Filtração Glomerular Estimada](https://www.rbac.org.br/artigos/taxa-de-filtracao-glomerular-estimada-em-adultos/#:~:text=A%20taxa%20de%20filtra%C3%A7%C3%A3o%20glomerular%20(TFG)%20%C3%A9%20a%20medida%20da,da%20avalia%C3%A7%C3%A3o%20da%20fun%C3%A7%C3%A3o%20renal.)

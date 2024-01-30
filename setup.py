@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.3'
+VERSION = '0.0.6'
 DESCRIPTION = 'Ajuda com análise de resultados médicos e laboratoriais.'
 LONG_DESCRIPTION = ('O pacote auxilia na compreensão de dados relacionados a exames biológicos, para a documentação '
                     'completa visite o repositório do projeto, via:https://github.com/DeadFall323/Health_Tools')
